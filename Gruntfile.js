@@ -111,7 +111,6 @@ module.exports = function(grunt) {
 			},
 		},
 	});
-
 	grunt.registerTask('default', ['uglify', 'imagemin', 'webfont', 'stylus']);
 	grunt.registerTask('build', ['uglify', 'imagemin', 'webfont', 'stylus']);
 };
