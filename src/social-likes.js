@@ -32,10 +32,10 @@
 	 */
 	var services = {
 		facebook: {
-        	counterUrl: 'https://graph.facebook.com/v2.2/?id={url}&fields=og_object{engagement}',
-       		convertNumber: function(data) {
-            	return data.og_object.engagement.count;
-       		},
+		counterUrl: 'https://graph.facebook.com/v2.2/?id={url}&fields=og_object{engagement}',
+		convertNumber: function(data) {
+		return data.og_object.engagement.count;
+		},
 			popupUrl: 'https://www.facebook.com/sharer/sharer.php?u={url}',
 			popupWidth: 600,
 			popupHeight: 359,
