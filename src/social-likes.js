@@ -34,7 +34,7 @@
 		facebook: {
 			counterUrl: 'https://graph.facebook.com/v2.2/?id={url}&fields=og_object{engagement}',
 			convertNumber: function(data) {
-			return data.og_object.engagement.count;
+				return data.og_object.engagement.count;
 			},
 			popupUrl: 'https://www.facebook.com/sharer/sharer.php?u={url}',
 			popupWidth: 600,
@@ -541,7 +541,7 @@
 			if ($.isEmptyObject(params)) {
 				return url;
 			}
-		var glue = url.indexOf('?') === -1 ? '?' : '&';
+			var glue = url.indexOf('?') === -1 ? '?' : '&';
 			return url + glue + params;
 		},
 
@@ -551,7 +551,7 @@
 			var width = window.innerWidth
 				? window.innerWidth
 				: document.documentElement.clientWidth
-					? document.documentElement.clientWidth
+				? document.documentElement.clientWidth
 				: screen.width;
 			var height = window.innerHeight
 				? window.innerHeight
