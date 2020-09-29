@@ -102,16 +102,9 @@ module.exports = function(grunt) {
 			options: {
 				livereload: true,
 			},
-			stylus: {
-				options: {
-					atBegin: true,
-				},
-				files: 'src/styles/**',
-				tasks: ['stylus:compile'],
-			},
 		},
 	});
 
-	grunt.registerTask('default', ['uglify', 'imagemin', 'webfont', 'stylus', 'csso']);
-	grunt.registerTask('build', ['uglify', 'imagemin', 'webfont', 'stylus', 'csso']);
+	grunt.registerTask('default', ['uglify', 'imagemin', 'webfont', 'csso']);
+	grunt.registerTask('build', ['uglify', 'imagemin', 'webfont', 'csso']);
 };
