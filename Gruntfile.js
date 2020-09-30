@@ -26,6 +26,17 @@ module.exports = function(grunt) {
 					},
 				],
 			},
+			compile: {
+				files: {
+				},
+			},
+			contrib: {
+				options: {
+					compress: false,
+				},
+				files: {
+				},
+			},
 		},
 		csso: {
 			options: {
