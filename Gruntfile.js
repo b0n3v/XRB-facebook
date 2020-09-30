@@ -21,16 +21,12 @@ module.exports = function(grunt) {
 			options: {
 				urlfunc: 'embedurl',
 				use: [
-					function() return require('autoprefixer-stylus')({ browsers: ['last 2 versions', 'ie 8'] });
+					function() {
+						return require('autoprefixer-stylus')({ browsers: ['last 2 versions', 'ie 8'] });
 					},
 				],
 			},
 			compile: {
-				files: {
-					'dist/social-likes_flat.css': 'src/styles/flat/index.styl',
-					'dist/social-likes_classic.css': 'src/styles/classic/index.styl',
-					'dist/social-likes_birman.css': 'src/styles/birman/index.styl',
-				},
 			},
 			contrib: {
 				options: {
