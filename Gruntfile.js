@@ -31,15 +31,6 @@ module.exports = function(grunt) {
 
 				},
 			},
-			contrib: {
-				options: {
-					compress: false,
-				},
-				files: {
-
-				},
-			},
-		},
 		csso: {
 			options: {
 				banner: '<%= banner %>',
