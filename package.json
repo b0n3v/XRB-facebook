@@ -51,7 +51,7 @@
     "prettier": "^1.6.1"
   },
   "scripts": {
-    "build": "grunt --force",
+    "build": "grunt",
     "test": "eslint src && grunt",
     "lint": "eslint src --fix",
     "publish": "npm run update-gh-pages && npm run build-gh-pages",
