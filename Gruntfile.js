@@ -36,8 +36,7 @@ module.exports = function(grunt) {
 					compress: false,
 				},
 				files: {
-					'contrib/css/github.css': 'contrib/styles/github.styl',
-					'contrib/css/livejournal.css': 'contrib/styles/livejournal.styl',
+
 				},
 			},
 		},
