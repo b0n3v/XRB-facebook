@@ -28,9 +28,7 @@ module.exports = function(grunt) {
 			},
 			compile: {
 				files: {
-					'dist/social-likes_flat.css': 'src/styles/flat/index.styl',
-					'dist/social-likes_classic.css': 'src/styles/classic/index.styl',
-					'dist/social-likes_birman.css': 'src/styles/birman/index.styl',
+
 				},
 			},
 			contrib: {
