@@ -21,8 +21,7 @@ module.exports = function(grunt) {
 			options: {
 				urlfunc: 'embedurl',
 				use: [
-					function() {
-						return require('autoprefixer-stylus')({ browsers: ['last 2 versions', 'ie 8'] });
+					function() return require('autoprefixer-stylus')({ browsers: ['last 2 versions', 'ie 8'] });
 					},
 				],
 			},
@@ -38,7 +37,8 @@ module.exports = function(grunt) {
 					compress: false,
 				},
 				files: {
-
+					'contrib/css/github.css': 'contrib/styles/github.styl',
+					'contrib/css/livejournal.css': 'contrib/styles/livejournal.styl',
 				},
 			},
 		},
