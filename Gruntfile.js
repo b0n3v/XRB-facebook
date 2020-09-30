@@ -29,14 +29,6 @@ module.exports = function(grunt) {
 			compile: {
 			},
 			contrib: {
-				options: {
-					compress: false,
-				},
-				files: {
-					'contrib/css/github.css': 'contrib/styles/github.styl',
-					'contrib/css/livejournal.css': 'contrib/styles/livejournal.styl',
-				},
-			},
 		},
 		csso: {
 			options: {
