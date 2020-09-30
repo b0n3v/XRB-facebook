@@ -52,7 +52,6 @@
   },
   "scripts": {
     "build": "grunt",
-    "test": "eslint src && grunt",
     "lint": "eslint src --fix",
     "publish": "npm run update-gh-pages && npm run build-gh-pages",
     "update-gh-pages": "mkdir -p docs/src && cp dist/* docs/src/ && cp src/social-likes.js docs/src/",
